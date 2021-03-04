@@ -5,6 +5,7 @@ int main ()
     char c[100];
     int n,b[4],j,i,t,t1;
     scanf ("%d",&n);
+    b[0]=1;
     for(j=0;j<n;j++)
     {
         b[0]=1;
@@ -23,7 +24,7 @@ int main ()
                 b[0] = b[3];
                 b[3] = t;
             }
-            else if(c[j]=='C')
+            else if(c[i]=='C')
             {
                 t = b[0];
                 b[0] = b[2];
@@ -32,7 +33,7 @@ int main ()
                 b[1] = b[3];
                 b[3] = t;
             }
-            else if(c[j]=='D')
+            else if(c[i]=='D')
             {
                 t = b[0];
                 b[0] = b[1];
@@ -41,7 +42,7 @@ int main ()
                 b[2] = b[3];
                 b[3] = t1;
             }
-            else if(c[j]=='E')
+            else if(c[i]=='E')
             {
                 t = b[0];
                 b[0] = b[3];
