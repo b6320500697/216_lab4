@@ -3,9 +3,10 @@
 int main ()
 {
     char word[200];
-    int k;
+    int k,j;
     gets(word);
-    for (k=0;k<=strlen(word);k++)
+    j=strlen(word);
+    for (k=0;k<=j;k++)
     {
         if (word[k-1]!=word[k])
         {
