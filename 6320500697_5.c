@@ -5,10 +5,10 @@ int main ()
     char c[100];
     int n,b[4],j,i,t,t1;
     scanf ("%d",&n);
-    b[0]=1;
     for(j=0;j<n;j++)
     {
         b[0]=1;
+
         scanf("%s",c);
         for(i=0;i<strlen(c);i++)
         {
