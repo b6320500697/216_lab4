@@ -2,7 +2,7 @@
 int main ()
 {
     char c[100];
-    int n,b[4],j,i,t;
+    int n,b[4],j,i,t,t1;
     scanf ("%d",&n);
     for(j=0;j<n;j++)
     {
@@ -20,6 +20,15 @@ int main ()
             {
                 t = b[0];
                 b[0] = b[3];
+                b[3] = t;
+            }
+            else if(c[j]=='C')
+            {
+                t = b[0];
+                b[0] = b[2];
+                b[2] = t;
+                t1 = b[1];
+                b[1] = b[3];
                 b[3] = t;
             }
         }
