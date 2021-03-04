@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int main ()
 {
     char c[100];
@@ -50,7 +51,14 @@ int main ()
                 b[1] = t1;
             }
         }
-
+        for(i=0;i<4;i++)
+        {
+            if(b[i]==1)
+            {
+                printf("%d\n",i+1);
+            }
+            b[i] = 0;
+        }
     }
     return 0;
 }
