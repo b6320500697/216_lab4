@@ -2,9 +2,15 @@
 #include <string.h>
 int main ()
 {
-    char word{200};
+    char word[200];
     int k;
-    get(word);
-    k=strlen(a);
-
+    gets(word);
+    for (k=0;k<=strlen(word);k++)
+    {
+        if (word[k-1]!=word[k])
+        {
+            printf ("%c",word[k]);
+        }
+    }
+    return 0;
 }
