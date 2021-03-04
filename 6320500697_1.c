@@ -15,9 +15,13 @@ int main ()
     {
         for (k=i;k<i+3;i++)
         {
-            sum+=(number[k][0]*4)+(number[k][1]*2)+(number[k][2]*1)
+            sum+=(number[k][0]*4)+(number[k][1]*2)+(number[k][2]*1);
         }
+        if(max<sum)
+        {
+            max=su,;
+            max1=i;
+        }
+
     }
-
-
 }
