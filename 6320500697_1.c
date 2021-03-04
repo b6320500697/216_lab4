@@ -13,15 +13,22 @@ int main ()
     }
     for(i=0;i<n-2;i++)
     {
-        for (k=i;k<i+3;i++)
+        for (k=i;k<i+3;k++)
         {
             sum+=(number[k][0]*4)+(number[k][1]*2)+(number[k][2]*1);
         }
         if(max<sum)
         {
-            max=su,;
+            max=sum;
             max1=i;
         }
-
+        if(min>sum)
+        {
+            min=sum;
+            min1=i;
+        }
+        sum=0;
     }
+    printf ("%d %d",max1+1,min1+1);
+    return 0;
 }
