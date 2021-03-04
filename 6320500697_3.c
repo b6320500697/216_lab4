@@ -3,15 +3,16 @@
 int main ()
 {
     char word[200];
-    int k,j;
+    int k=0,j;
     gets(word);
     j=strlen(word);
-    for (k=0;k<=j;k++)
+    while (k<j)
     {
         if (word[k-1]!=word[k])
         {
             printf ("%c",word[k]);
         }
+        k++;
     }
     return 0;
 }
