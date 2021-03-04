@@ -4,7 +4,7 @@ int main ()
 {
     char word[200];
     int k=0,j;
-    gets(word);
+    scanf ("%s",word);
     j=strlen(word);
     while (k<j)
     {
