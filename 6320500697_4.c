@@ -20,9 +20,9 @@ int main()
         if(i==11||j==0)
         {
             printf ("%c",toupper(p[0]));
+        }
             p = strtok(NULL," ");
             j++,i=0;
-        }
     }
     return 0;
 }
